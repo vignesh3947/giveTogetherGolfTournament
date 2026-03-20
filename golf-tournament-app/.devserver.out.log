@@ -1,0 +1,19 @@
+
+> golf-tournament-app@0.1.0 dev
+> next dev
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.2.89:3000
+
+✓ Starting...
+Creating turbopack project { dir: 'C:\\Golf Project\\golf-tournament-app', testMode: true }
+✓ Ready in 1712ms
+ GET / 200 in 1984ms (compile: 1511ms, render: 472ms)
+ GET / 200 in 317ms (compile: 28ms, render: 288ms)
+ GET / 200 in 207ms (compile: 18ms, render: 189ms)
+ GET / 200 in 108ms (compile: 10ms, render: 97ms)
+ GET / 200 in 181ms (compile: 23ms, render: 157ms)
+ GET / 200 in 195ms (compile: 21ms, render: 174ms)
+ GET / 200 in 179ms (compile: 17ms, render: 162ms)
+ GET / 200 in 223ms (compile: 18ms, render: 205ms)

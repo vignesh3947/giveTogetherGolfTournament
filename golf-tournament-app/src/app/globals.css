@@ -1,14 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #e9dfc5;
   --foreground: #171717;
+  --nav-background: #de1628;
+  --nav-highlight: #eb5a66;
+  --nav-icon: rgba(255, 255, 255, 0.2);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-poppins);
   --font-mono: var(--font-geist-mono);
 }
 
@@ -22,5 +25,153 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins), "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+.hero-title {
+  color: #fff;
+  text-shadow: 0 6px 18px rgba(0, 0, 0, 0.55);
+}
+
+.hero-copy {
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+}
+
+.top-nav-shell {
+  padding: 0;
+}
+
+.top-nav {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  padding: 1rem 2.5rem;
+  border-radius: 0;
+  background: var(--nav-background);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.top-nav-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.top-nav-brand-mark {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.top-nav-brand-blade {
+  width: 0.95rem;
+  height: 1.1rem;
+  border-radius: 0.8rem 0.8rem 0.8rem 0.2rem;
+  transform: rotate(42deg);
+  background: #fff;
+}
+
+.top-nav-brand-blade-bottom {
+  transform: rotate(-138deg);
+}
+
+.top-nav-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.92;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.top-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.top-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  border-radius: 999px;
+  padding: 0.55rem 1.2rem 0.55rem 0.7rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.16);
+  transition: background-color 160ms ease, opacity 160ms ease;
+}
+
+.top-nav-link:hover {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.top-nav-link.is-active {
+  background: rgba(255, 255, 255, 0.32);
+}
+
+.top-nav-link-icon {
+  width: 2.55rem;
+  height: 2.55rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.25);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.top-nav-link-icon svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 0.6;
+}
+
+@media (max-width: 900px) {
+  .top-nav {
+    border-radius: 0;
+    padding: 1rem 1.5rem 1.3rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top-nav-links {
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    padding-bottom: 0.2rem;
+  }
+
+  .top-nav-link {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 640px) {
+  .top-nav-shell {
+    padding: 0;
+  }
+
+  .top-nav-brand-text {
+    font-size: 1.7rem;
+  }
+
+  .top-nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .top-nav-link-icon {
+    width: 2rem;
+    height: 2rem;
+  }
 }

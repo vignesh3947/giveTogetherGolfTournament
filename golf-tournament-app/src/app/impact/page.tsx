@@ -1,34 +1,17 @@
-import Link from 'next/link';
+import Navbar from '@/components/Navbar';
 
 export default function Impact() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800">
+    <div className="min-h-screen bg-[var(--background)]">
       {/* Navigation Header */}
-      <header className="bg-white dark:bg-gray-950 shadow-sm">
-        <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition">
-            <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">⛳</span>
-            </div>
-            <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-              Give-together Golf
-            </h1>
-          </Link>
-          <Link
-            href="/"
-            className="px-4 py-2 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700 transition"
-          >
-            Back to Home
-          </Link>
-        </nav>
-      </header>
+      <Navbar active="about" />
 
       {/* Hero Section */}
       <main className="max-w-7xl mx-auto px-6 py-20">
         <div className="mb-16">
           <div className="inline-block mb-4">
             <span className="bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 px-4 py-2 rounded-full text-sm font-semibold">
-              🌍 Impact
+              ðŸŒ Impact
             </span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
@@ -79,49 +62,49 @@ export default function Impact() {
           <div className="space-y-6">
             <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg border-l-4 border-purple-600">
               <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-3">
-                🏥 Healthcare & Research
+                ðŸ¥ Healthcare & Research
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
                 Funding cutting-edge medical research, providing access to treatment, and supporting healthcare initiatives in underserved communities.
               </p>
               <div className="text-sm text-purple-600 dark:text-purple-400 font-semibold">
-                ✓ 50+ research projects funded | ✓ 10K+ patients supported
+                âœ“ 50+ research projects funded | âœ“ 10K+ patients supported
               </div>
             </div>
 
             <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg border-l-4 border-purple-600">
               <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-3">
-                📚 Education & Youth Development
+                ðŸ“š Education & Youth Development
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
                 Establishing golf programs in schools, providing scholarships, and mentoring the next generation of leaders and changemakers.
               </p>
               <div className="text-sm text-purple-600 dark:text-purple-400 font-semibold">
-                ✓ 500+ scholarships awarded | ✓ 100+ schools supported
+                âœ“ 500+ scholarships awarded | âœ“ 100+ schools supported
               </div>
             </div>
 
             <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg border-l-4 border-purple-600">
               <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-3">
-                🌱 Environmental Stewardship
+                ðŸŒ± Environmental Stewardship
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
                 Promoting sustainable golf practices, protecting natural habitats, and supporting environmental conservation worldwide.
               </p>
               <div className="text-sm text-purple-600 dark:text-purple-400 font-semibold">
-                ✓ 10K+ acres protected | ✓ 50+ conservation projects
+                âœ“ 10K+ acres protected | âœ“ 50+ conservation projects
               </div>
             </div>
 
             <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg border-l-4 border-purple-600">
               <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-3">
-                🤲 Community Support & Relief
+                ðŸ¤² Community Support & Relief
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
                 Emergency relief, disaster assistance, and long-term community development programs in vulnerable regions.
               </p>
               <div className="text-sm text-purple-600 dark:text-purple-400 font-semibold">
-                ✓ 20+ disaster relief efforts | ✓ 100K+ families supported
+                âœ“ 20+ disaster relief efforts | âœ“ 100K+ families supported
               </div>
             </div>
           </div>
@@ -141,7 +124,7 @@ export default function Impact() {
                 Our partnership funded a malaria research initiative that resulted in a new treatment now being used across 12 African countries, helping thousands of patients every month.
               </p>
               <p className="text-sm text-purple-700 dark:text-purple-300 font-semibold">
-                "This program changed the course of treatment for our communities." — Dr. Amara, Tanzania
+                "This program changed the course of treatment for our communities." â€” Dr. Amara, Tanzania
               </p>
             </div>
 
@@ -153,7 +136,7 @@ export default function Impact() {
                 Give-together Golf built the first community golf program in an underserved neighborhood, creating pathways for 500+ youth to learn the game and earn scholarships to college.
               </p>
               <p className="text-sm text-purple-700 dark:text-purple-300 font-semibold">
-                "Golf gave me hope and a future I never thought possible." — Marcus, Age 17
+                "Golf gave me hope and a future I never thought possible." â€” Marcus, Age 17
               </p>
             </div>
           </div>
@@ -180,3 +163,4 @@ export default function Impact() {
     </div>
   );
 }
+

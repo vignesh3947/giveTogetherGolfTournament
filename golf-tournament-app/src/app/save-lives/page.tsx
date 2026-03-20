@@ -1,41 +1,24 @@
-import Link from 'next/link';
+import Navbar from '@/components/Navbar';
 
 export default function SaveLives() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-50 to-pink-50 dark:from-gray-900 dark:to-gray-800">
+    <div className="min-h-screen bg-[var(--background)]">
       {/* Navigation Header */}
-      <header className="bg-white dark:bg-gray-950 shadow-sm">
-        <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition">
-            <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">⛳</span>
-            </div>
-            <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-              Give-together Golf
-            </h1>
-          </Link>
-          <Link
-            href="/"
-            className="px-4 py-2 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700 transition"
-          >
-            Back to Home
-          </Link>
-        </nav>
-      </header>
+      <Navbar active="home" />
 
       {/* Hero Section */}
       <main className="max-w-7xl mx-auto px-6 py-20">
         <div className="mb-16">
           <div className="inline-block mb-4">
             <span className="bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 px-4 py-2 rounded-full text-sm font-semibold">
-              🏥 Save Lives
+              ðŸ¥ Save Lives
             </span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
             Every Shot Saves Lives
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8 max-w-3xl">
-            Our golf tournament is more than just a game—it's a mission to make a real difference in people's lives. Through every registration, every donation, and every round played, we're funding critical medical research and providing access to life-saving treatments for those in need.
+            Our golf tournament is more than just a gameâ€”it's a mission to make a real difference in people's lives. Through every registration, every donation, and every round played, we're funding critical medical research and providing access to life-saving treatments for those in need.
           </p>
         </div>
 
@@ -118,3 +101,4 @@ export default function SaveLives() {
     </div>
   );
 }
+
