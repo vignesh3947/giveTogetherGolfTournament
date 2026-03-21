@@ -4,7 +4,7 @@ export default function Sponsor() {
   return (
     <div className="min-h-screen bg-[var(--background)]">
       {/* Navigation Header */}
-      <Navbar active="sponsor" />
+      <Navbar active="sponsors" />
 
       <main className="max-w-7xl mx-auto px-6 py-20">
 
