@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-type NavKey = "home" | "about" | "contact";
+type NavKey = "home" | "about" | "sponsors";
 
 type NavbarProps = {
   active?: NavKey;
