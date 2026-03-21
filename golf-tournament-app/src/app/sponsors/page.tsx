@@ -29,8 +29,8 @@ export default function sponsors() {
 
           {/* Form Button */}
           <a
-            href="YOUR_FORM_LINK"
-            target="_blank"
+            href="/sponsors"
+            target="/"
             className="inline-block px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition"
           >
             Apply to Become a Sponsor
@@ -122,8 +122,8 @@ export default function sponsors() {
           </p>
 
           <a
-            href="YOUR_FORM_LINK"
-            target="_blank"
+            href="/sponsors"
+            target="/"
             className="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition"
           >
             Become a Sponsor
