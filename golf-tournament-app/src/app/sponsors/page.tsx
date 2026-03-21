@@ -1,6 +1,6 @@
 import Navbar from '@/components/Navbar';
 
-export default function Sponsor() {
+export default function sponsors() {
   return (
     <div className="min-h-screen bg-[var(--background)]">
       {/* Navigation Header */}
