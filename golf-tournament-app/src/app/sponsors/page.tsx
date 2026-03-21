@@ -88,19 +88,19 @@ export default function Sponsor() {
           <div className="grid md:grid-cols-3 gap-6">
 
             <img
-              src="/sponsor1.jpg"
+              src="/golfLogo.jpg"
               alt="Sponsor event"
               className="rounded-xl shadow-lg object-cover w-full h-64"
             />
 
             <img
-              src="/sponsor2.jpg"
+              src="/golfLogo.jpg"
               alt="Golf tournament sponsors"
               className="rounded-xl shadow-lg object-cover w-full h-64"
             />
 
             <img
-              src="/sponsor3.jpg"
+              src="/golfLogo.jpg"
               alt="Sponsor branding"
               className="rounded-xl shadow-lg object-cover w-full h-64"
             />
