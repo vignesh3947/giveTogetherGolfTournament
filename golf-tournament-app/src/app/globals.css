@@ -58,35 +58,16 @@ body {
 .top-nav-brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.7rem;
   color: #fff;
   text-decoration: none;
 }
 
-.top-nav-brand-mark {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-
-.top-nav-brand-blade {
-  width: 0.95rem;
-  height: 1.1rem;
-  border-radius: 0.8rem 0.8rem 0.8rem 0.2rem;
-  transform: rotate(42deg);
-  background: #fff;
-}
-
-.top-nav-brand-blade-bottom {
-  transform: rotate(-138deg);
-}
-
-.top-nav-brand-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 0.92;
-  font-size: 2rem;
-  font-weight: 600;
+.top-nav-brand-logo {
+  height: 4.8rem;
+  width: auto;
+  max-height: 100%;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .top-nav-links {
@@ -161,8 +142,9 @@ body {
     padding: 0;
   }
 
-  .top-nav-brand-text {
-    font-size: 1.7rem;
+  .top-nav-brand-logo {
+    height: 4rem;
+    width: auto;
   }
 
   .top-nav-link {

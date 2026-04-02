@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-type NavKey = "home" | "about" | "sponsors";
+type NavKey = "home" | "about" | "explore" | "sponsors";
 
 type NavbarProps = {
   active?: NavKey;
@@ -9,6 +9,7 @@ type NavbarProps = {
 const navItems: Array<{ key: NavKey; label: string; href: string }> = [
   { key: "home", label: "Home", href: "/" },
   { key: "about", label: "About Us", href: "https://www.givetogether.ca/" },
+  { key: "explore", label: "Explore Tournament", href: "/explore-tournament" },
   { key: "sponsors", label: "Become A Sponsor", href: "/sponsors" },
 ];
 
@@ -30,6 +31,15 @@ function NavIcon({ item }: { item: NavKey }) {
     );
   }
 
+  if (item === "explore") {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="8" />
+        <path d="M12 7.5L14.5 14.5L7.5 12L12 7.5Z" />
+      </svg>
+    );
+  }
+
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <rect x="3" y="4" width="18" height="16" rx="3" />
@@ -46,14 +56,11 @@ export default function Navbar({ active = "home" }: NavbarProps) {
     <header className="top-nav-shell">
       <nav className="top-nav">
         <Link href="/" className="top-nav-brand" aria-label="Go to home page">
-          <span className="top-nav-brand-mark" aria-hidden="true">
-            <span className="top-nav-brand-blade" />
-            <span className="top-nav-brand-blade top-nav-brand-blade-bottom" />
-          </span>
-          <span className="top-nav-brand-text">
-            <span>Give</span>
-            <span>Together</span>
-          </span>
+          <img
+            src="/give-together-logo.svg"
+            alt="Give Together logo"
+            className="top-nav-brand-logo"
+          />
         </Link>
 
         <div className="top-nav-links">

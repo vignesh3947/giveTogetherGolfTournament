@@ -68,10 +68,10 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
               Why This Tournament Matters
             </h2>
-            <p className="text-lg text-gray-700 dark:text-gray-200 max-w-2xl mx-auto leading-relaxed italic">
-              This tournament exists to convert awareness into action - turning community engagement into real blood and plasma donations that directly save lives. In partnership with Canadian Blood Services, we are building a platform where sport, sponsorship, and social responsibility create measurable healthcare impact.
+            <p className="text-lg text-gray-700 dark:text-gray-200 max-w-6xl mx-auto leading-relaxed italic">
+              This tournament converts awareness into action&mdash;turning community engagement into real blood, plasma, and platelet donations that save lives&mdash;while, in partnership with Canadian Blood Services, inspiring participation and long-term donor awareness as demand continues to outpace supply in Canada's healthcare system. We also highlight stem cell donation: a simple swab can start HLA matching for patients with leukemia and other serious blood disorders, yet far too few people are registered. Led by Give Together, a student-driven initiative supported by the Seneca Student Federation (SSF), Give Together Golf unites sport, community, and social responsibility to create measurable healthcare impact.
             </p>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto italic">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-6xl mx-auto italic">
               Give-together Golf is built on three fundamental pillars. Click to learn more about each one.
             </p>
           </div>
@@ -159,6 +159,34 @@ export default function Home() {
                   <span>→</span>
                 </a>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* In Memory Section */}
+        <section className="mt-12">
+          <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition">
+            <div className="max-w-6xl mx-auto space-y-6">
+              <div className="space-y-3">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white text-center tracking-tight">
+                  In Memory
+                </h3>
+                <div className="h-px bg-gradient-to-r from-transparent via-rose-200 to-transparent dark:via-rose-800/40" />
+              </div>
+              <p className="text-gray-800 dark:text-gray-100 leading-relaxed text-center md:text-lg">
+                This tournament is held in memory of my late wife, Angie, on the two-year anniversary of her passing on August 7, 2024, following complications related to Severe Aplastic Anemia.
+              </p>
+              <div className="grid gap-8 md:grid-cols-2 md:items-start">
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-left md:text-base">
+                  Over the course of one year of her illness, she received more than 100 blood transfusions&mdash;including platelets, plasma, and whole blood. Each transfusion represented the generosity of donors and the extraordinary efforts of the healthcare system that supported her.
+                </p>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-left md:text-base">
+                  Through this experience, we came to deeply understand both the life-saving importance of blood donation and the critical need for stem cell donors, where matching through HLA typing can offer patients a second chance at life.
+                </p>
+              </div>
+              <p className="text-center text-gray-900 dark:text-gray-100 font-semibold tracking-wide">
+                Be the Reason Someone Gets Another Day
+              </p>
             </div>
           </div>
         </section>
