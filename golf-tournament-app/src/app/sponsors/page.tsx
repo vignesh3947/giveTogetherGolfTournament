@@ -162,9 +162,9 @@ export default function Sponsors() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-900 dark:bg-black text-gray-400 py-12 mt-24">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <p>&copy; 2026 Give Together Golf Tournament. All rights reserved.</p>
+      <footer className="bg-[var(--nav-background)] py-8 mt-24">
+        <div className="max-w-7xl mx-auto px-6 text-center text-sm text-white">
+          <p>&copy; 2026 Give-together Golf Tournament. All rights reserved.</p>
         </div>
       </footer>
     </div>

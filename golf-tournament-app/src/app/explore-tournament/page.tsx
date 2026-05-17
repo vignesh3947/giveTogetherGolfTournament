@@ -10,7 +10,8 @@ export default function ExploreTournament() {
   const teamNote = isEarlyBird
     ? "If booked before June 29, 2026."
     : "Early bird pricing ended June 29, 2026.";
-  const registrationFormUrl = "https://forms.office.com/";
+  const registrationFormUrl =
+    "https://docs.google.com/forms/d/e/1FAIpQLSdqoPVmkm6v_TJRH-w2OJ9GvQpWQzmv67_FCggRcHyvu723tw/viewform?usp=header";
 
   return (
     <div
@@ -62,8 +63,6 @@ export default function ExploreTournament() {
               </p>
               <a
                 href={registrationFormUrl}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-lg bg-red-600 px-6 py-3 text-white font-semibold hover:bg-red-700 transition"
               >
                 Register Now
@@ -161,9 +160,9 @@ export default function ExploreTournament() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-900 dark:bg-black text-gray-400 py-12 mt-24">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <p>&copy; 2026 Give Together Golf Tournament. All rights reserved.</p>
+      <footer className="bg-[var(--nav-background)] py-8 mt-24">
+        <div className="max-w-7xl mx-auto px-6 text-center text-sm text-white">
+          <p>&copy; 2026 Give-together Golf Tournament. All rights reserved.</p>
         </div>
       </footer>
     </div>
