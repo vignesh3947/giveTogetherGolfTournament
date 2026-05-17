@@ -19,7 +19,7 @@ export default function Home() {
             <div className="w-full px-6 flex justify-center">
               <div className="space-y-6 text-center max-w-3xl">
                 <h1 className="hero-title text-6xl md:text-7xl font-bold leading-tight tracking-tight">
-                  Give Together Golf Tournament
+                  Give-together Golf Tournament
                 </h1>
                 <div className="hero-copy space-y-3">
                   <p className="text-xl md:text-2xl font-semibold tracking-tight">
@@ -52,7 +52,10 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-10 md:mt-0 md:absolute md:bottom-6 md:right-6 w-full md:w-auto flex justify-center md:justify-end px-6 pb-6 md:p-0">
-            <div className="flex flex-col items-center md:items-end w-full max-w-xs">
+            <div className="flex flex-col items-center md:items-end gap-3 w-full max-w-xs">
+              <button className="hero-title px-6 py-2.5 border-2 border-white/70 text-white rounded-lg font-semibold hover:bg-white/10 transition w-full">
+                Explore Tournament
+              </button>
               <CountdownTimer size="compact" className="w-full" />
             </div>
           </div>
@@ -66,7 +69,7 @@ export default function Home() {
               Why This Tournament Matters
             </h2>
             <p className="text-lg text-gray-700 dark:text-gray-200 max-w-6xl mx-auto leading-relaxed italic">
-              This tournament converts awareness into action-turning community engagement into real blood, plasma, and platelet donations that save lives-while, in partnership with Canadian Blood Services, inspiring participation and long-term donor awareness as demand continues to outpace supply in Canada&apos;s healthcare system. We also highlight stem cell donation: a simple swab can start HLA matching for patients with leukemia and other serious blood disorders, yet far too few people are registered. Led by Give Together, a student-driven initiative supported by the Seneca Student Federation (SSF), Give Together Golf unites sport, community, and social responsibility to create measurable healthcare impact.
+              This tournament converts awareness into action turning community engagement into real blood, plasma, and platelet donations that save lives while, in partnership with Canadian Blood Services, inspiring participation and long-term donor awareness as demand continues to outpace supply in Canada's healthcare system. We also highlight stem cell donation: a simple swab can start HLA matching for patients with leukemia and other serious blood disorders, yet far too few people are registered. Led by Give Together, a student-driven initiative supported by the Seneca Student Federation (SSF), Give Together Golf unites sport, community, and social responsibility to create measurable healthcare impact.
             </p>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-6xl mx-auto italic">
               Give-together Golf is built on three fundamental pillars. Click to learn more about each one.
@@ -75,7 +78,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Save Lives */}
-            <a href="https://secure3.convio.net/cadbs/site/Donation2?mfc_pref=T&3041.donation=form1&df_id=3041" className="group">
+            <a href="https://secure3.convio.net/cadbs/site/Donation2?mfc_pref=T&2901.donation=form1&df_id=2901" className="group">
               <div className="bg-gradient-to-br from-red-50 to-pink-50 dark:from-red-900/10 dark:to-pink-900/10 rounded-xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition transform duration-300 border border-red-100 dark:border-red-900/30 cursor-pointer h-full">
                 <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-pink-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
                   <span className="text-3xl">🏥</span>
@@ -84,7 +87,7 @@ export default function Home() {
                   Save Lives
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                  Every dollar raised funds life-saving medical research and treatment programs. Together, we&apos;re making a real difference in healthcare worldwide.
+                  Every dollar raised funds life-saving medical research and treatment programs. Together, we're making a real difference in healthcare worldwide.
                 </p>
                 <div className="flex items-center text-red-600 dark:text-red-400 font-semibold group-hover:translate-x-2 transition">
                   Donate now <span className="ml-2">&rarr;</span>
@@ -144,7 +147,7 @@ export default function Home() {
                   Canada Blood Services
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                  Canada Blood Services is a national, not-for-profit organization that operates under a federal license. We&apos;re proud to partner with them to support blood donation initiatives and save lives through our tournament fundraising efforts. Every dollar raised helps ensure a safe and reliable blood supply for Canadians in need.
+                  Canada Blood Services is a national, not-for-profit organization that operates under a federal license. We're proud to partner with them to support blood donation initiatives and save lives through our tournament fundraising efforts. Every dollar raised helps ensure a safe and reliable blood supply for Canadians in need.
                 </p>
                 <a
                   href="https://www.blood.ca"
@@ -191,9 +194,20 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-[var(--nav-background)] py-8 mt-24">
-        <div className="max-w-7xl mx-auto px-6 text-center text-sm text-white">
-          <p>&copy; 2026 Give-together Golf Tournament. All rights reserved.</p>
+      <footer className="bg-gray-900 dark:bg-black text-gray-400 py-12 mt-24">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
+            <div>
+              <h4 className="text-white font-semibold mb-4">Golf Tournament</h4>
+              <ul className="space-y-2 text-sm">
+                <li><a href="https://www.givetogether.ca/" className="hover:text-white transition">About</a></li>
+                <li><a href="/sponsors" className="hover:text-white transition">Become A Sponsor</a></li>
+              </ul>
+            </div>           
+          </div>
+          <div className="border-t border-gray-800 pt-8 text-center text-sm">
+            <p>&copy; 2026 Give-together Golf Tournament. All rights reserved.</p>
+          </div>
         </div>
       </footer>
     </div>
