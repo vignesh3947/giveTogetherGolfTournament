@@ -53,9 +53,6 @@ export default function Home() {
           </div>
           <div className="mt-10 md:mt-0 md:absolute md:bottom-6 md:right-6 w-full md:w-auto flex justify-center md:justify-end px-6 pb-6 md:p-0">
             <div className="flex flex-col items-center md:items-end gap-3 w-full max-w-xs">
-              <button className="hero-title px-6 py-2.5 border-2 border-white/70 text-white rounded-lg font-semibold hover:bg-white/10 transition w-full">
-                Explore Tournament
-              </button>
               <CountdownTimer size="compact" className="w-full" />
             </div>
           </div>
@@ -78,7 +75,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Save Lives */}
-            <a href="https://secure3.convio.net/cadbs/site/Donation2?mfc_pref=T&2901.donation=form1&df_id=2901" className="group">
+            <a href="https://secure3.convio.net/cadbs/site/Donation2?mfc_pref=T&3041.donation=form1&df_id=3041" className="group">
               <div className="bg-gradient-to-br from-red-50 to-pink-50 dark:from-red-900/10 dark:to-pink-900/10 rounded-xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition transform duration-300 border border-red-100 dark:border-red-900/30 cursor-pointer h-full">
                 <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-pink-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
                   <span className="text-3xl">🏥</span>
@@ -194,20 +191,9 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-900 dark:bg-black text-gray-400 py-12 mt-24">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <h4 className="text-white font-semibold mb-4">Golf Tournament</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="https://www.givetogether.ca/" className="hover:text-white transition">About</a></li>
-                <li><a href="/sponsors" className="hover:text-white transition">Become A Sponsor</a></li>
-              </ul>
-            </div>           
-          </div>
-          <div className="border-t border-gray-800 pt-8 text-center text-sm">
-            <p>&copy; 2026 Give-together Golf Tournament. All rights reserved.</p>
-          </div>
+      <footer className="bg-[var(--nav-background)] text-white py-8 mt-24">
+        <div className="max-w-7xl mx-auto px-6 text-center text-sm">
+          <p>&copy; 2026 Give-together Golf Tournament. All rights reserved.</p>
         </div>
       </footer>
     </div>

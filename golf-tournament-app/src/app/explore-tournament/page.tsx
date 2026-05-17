@@ -11,7 +11,7 @@ export default function ExploreTournament() {
     ? "If booked before June 29, 2026."
     : "Early bird pricing ended June 29, 2026.";
   const registrationFormUrl =
-    "https://docs.google.com/forms/d/e/1FAIpQLSdqoPVmkm6v_TJRH-w2OJ9GvQpWQzmv67_FCggRcHyvu723tw/viewform?usp=header";
+    "https://docs.google.com/forms/d/e/1FAIpQLSdqoPVmkm6v_TJRH-w2OJ9GvQpWQzmv67_FCggRcHyvu723tw/viewform";
 
   return (
     <div
