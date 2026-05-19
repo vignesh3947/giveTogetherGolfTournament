@@ -19,7 +19,7 @@ export default function Home() {
             <div className="w-full px-6 flex justify-center">
               <div className="space-y-6 text-center max-w-3xl">
                 <h1 className="hero-title text-6xl md:text-7xl font-bold leading-tight tracking-tight">
-                  Give-together Golf Tournament
+                  GiveTogether Golf Tournament
                 </h1>
                 <div className="hero-copy space-y-3">
                   <p className="text-xl md:text-2xl font-semibold tracking-tight">
